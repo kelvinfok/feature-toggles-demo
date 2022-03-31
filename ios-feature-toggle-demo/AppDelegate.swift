@@ -10,27 +10,23 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    fetchFeatureFlags()
     return true
   }
 
-  // MARK: UISceneSession Lifecycle
-
-  func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+  private func fetchFeatureFlags() {
+    // Simulates making an API call to fetch flags
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+      let dict: [String : Any] = [
+        "isNewFeedEnabled": true,
+        "mobileWelcomeMessage": "Book a holiday and enjoy your time!",
+        "minimumCacheFeedResults": 8.0,
+        "isPaymentV3Enabled": false,
+        "paginationErrorMessageJsonString": "{\r\"msg\":\"We are working on a solution.\"\r}"]
+      FeatureToggles.shared.sync(dict: dict)
+    }
   }
-
-  func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-  }
-
 
 }
 
