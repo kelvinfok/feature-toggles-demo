@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		8DCB6B3C27F4E6A200049165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B3B27F4E6A200049165 /* AppDelegate.swift */; };
 		8DCB6B3E27F4E6A200049165 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B3D27F4E6A200049165 /* SceneDelegate.swift */; };
-		8DCB6B4027F4E6A200049165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B3F27F4E6A200049165 /* ViewController.swift */; };
+		8DCB6B4027F4E6A200049165 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B3F27F4E6A200049165 /* HomeViewController.swift */; };
 		8DCB6B4327F4E6A200049165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB6B4127F4E6A200049165 /* Main.storyboard */; };
 		8DCB6B4527F4E6A400049165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB6B4427F4E6A400049165 /* Assets.xcassets */; };
 		8DCB6B4827F4E6A400049165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DCB6B4627F4E6A400049165 /* LaunchScreen.storyboard */; };
+		8DCB6B5027F4F2DA00049165 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B4F27F4F2DA00049165 /* SettingsTableViewController.swift */; };
+		8DCB6B5327F4F37000049165 /* FeatureTogglesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B5227F4F37000049165 /* FeatureTogglesTableViewController.swift */; };
+		8DCB6B5627F4F68800049165 /* FeatureToggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B5527F4F68800049165 /* FeatureToggles.swift */; };
+		8DCB6B5927F4F80C00049165 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B5827F4F80C00049165 /* Constant.swift */; };
+		8DCB6B5C27F4F99000049165 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B5B27F4F99000049165 /* String+Extension.swift */; };
+		8DCB6B5E27F5075000049165 /* TeamFlagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB6B5D27F5075000049165 /* TeamFlagsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8DCB6B3827F4E6A200049165 /* ios-feature-toggle-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-feature-toggle-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCB6B3B27F4E6A200049165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DCB6B3D27F4E6A200049165 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DCB6B3F27F4E6A200049165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DCB6B3F27F4E6A200049165 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8DCB6B4227F4E6A200049165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DCB6B4427F4E6A400049165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DCB6B4727F4E6A400049165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DCB6B4927F4E6A400049165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DCB6B4F27F4F2DA00049165 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		8DCB6B5227F4F37000049165 /* FeatureTogglesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTogglesTableViewController.swift; sourceTree = "<group>"; };
+		8DCB6B5527F4F68800049165 /* FeatureToggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureToggles.swift; sourceTree = "<group>"; };
+		8DCB6B5827F4F80C00049165 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8DCB6B5B27F4F99000049165 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		8DCB6B5D27F5075000049165 /* TeamFlagsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFlagsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		8DCB6B3A27F4E6A200049165 /* ios-feature-toggle-demo */ = {
 			isa = PBXGroup;
 			children = (
+				8DCB6B5A27F4F97C00049165 /* extension */,
+				8DCB6B5727F4F7FC00049165 /* helper */,
+				8DCB6B5427F4F67C00049165 /* model */,
+				8DCB6B5127F4F34500049165 /* controller */,
 				8DCB6B3B27F4E6A200049165 /* AppDelegate.swift */,
 				8DCB6B3D27F4E6A200049165 /* SceneDelegate.swift */,
-				8DCB6B3F27F4E6A200049165 /* ViewController.swift */,
 				8DCB6B4127F4E6A200049165 /* Main.storyboard */,
 				8DCB6B4427F4E6A400049165 /* Assets.xcassets */,
 				8DCB6B4627F4E6A400049165 /* LaunchScreen.storyboard */,
 				8DCB6B4927F4E6A400049165 /* Info.plist */,
 			);
 			path = "ios-feature-toggle-demo";
+			sourceTree = "<group>";
+		};
+		8DCB6B5127F4F34500049165 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB6B3F27F4E6A200049165 /* HomeViewController.swift */,
+				8DCB6B4F27F4F2DA00049165 /* SettingsTableViewController.swift */,
+				8DCB6B5227F4F37000049165 /* FeatureTogglesTableViewController.swift */,
+				8DCB6B5D27F5075000049165 /* TeamFlagsTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8DCB6B5427F4F67C00049165 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB6B5527F4F68800049165 /* FeatureToggles.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8DCB6B5727F4F7FC00049165 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB6B5827F4F80C00049165 /* Constant.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		8DCB6B5A27F4F97C00049165 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DCB6B5B27F4F99000049165 /* String+Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCB6B4027F4E6A200049165 /* ViewController.swift in Sources */,
+				8DCB6B5C27F4F99000049165 /* String+Extension.swift in Sources */,
+				8DCB6B5927F4F80C00049165 /* Constant.swift in Sources */,
+				8DCB6B5627F4F68800049165 /* FeatureToggles.swift in Sources */,
+				8DCB6B5027F4F2DA00049165 /* SettingsTableViewController.swift in Sources */,
+				8DCB6B4027F4E6A200049165 /* HomeViewController.swift in Sources */,
+				8DCB6B5E27F5075000049165 /* TeamFlagsTableViewController.swift in Sources */,
 				8DCB6B3C27F4E6A200049165 /* AppDelegate.swift in Sources */,
 				8DCB6B3E27F4E6A200049165 /* SceneDelegate.swift in Sources */,
+				8DCB6B5327F4F37000049165 /* FeatureTogglesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
